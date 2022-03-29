@@ -10,7 +10,7 @@ RUN apt-get update && apt-get upgrade -y libsasl2-2=2.1.27~101-g0780600+dfsg-3+d
 RUN apt-get remove -y curl
 RUN apt-get remove -y libcurl3
 
-FROM node:lts-buster-slim
+FROM node:16.14.2-slim
 
 RUN npm update
 RUN npm install
